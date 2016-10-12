@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -145,14 +145,29 @@
                                     <constraint firstAttribute="height" constant="212" id="3Ga-nB-43g"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsO-jc-W8p">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="eUZ-wM-Uqw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91374147880000001" green="0.91374147880000001" blue="0.91374147880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="l8p-AI-i7R" firstAttribute="leading" secondItem="jRh-hC-anC" secondAttribute="leading" id="7Af-Hw-f82"/>
-                            <constraint firstAttribute="trailing" secondItem="l8p-AI-i7R" secondAttribute="trailing" id="HLD-jm-ULE"/>
-                            <constraint firstItem="l8p-AI-i7R" firstAttribute="top" secondItem="jRh-hC-anC" secondAttribute="top" id="TyI-nj-wWb"/>
+                            <constraint firstItem="IsO-jc-W8p" firstAttribute="leading" secondItem="jRh-hC-anC" secondAttribute="leadingMargin" id="MRu-1x-KrB"/>
+                            <constraint firstItem="l8p-AI-i7R" firstAttribute="leading" secondItem="jRh-hC-anC" secondAttribute="leading" id="QVc-P1-nBR"/>
+                            <constraint firstItem="l8p-AI-i7R" firstAttribute="centerX" secondItem="IsO-jc-W8p" secondAttribute="centerX" id="Wf5-Cp-QxW"/>
+                            <constraint firstItem="IsO-jc-W8p" firstAttribute="top" secondItem="l8p-AI-i7R" secondAttribute="bottom" constant="50" id="Zp9-1i-7nj"/>
+                            <constraint firstAttribute="trailing" secondItem="l8p-AI-i7R" secondAttribute="trailing" id="eZj-hF-0e8"/>
+                            <constraint firstItem="l8p-AI-i7R" firstAttribute="top" secondItem="jRh-hC-anC" secondAttribute="top" id="lTR-EC-EIa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="IsO-jc-W8p" id="wJP-iT-MwZ"/>
+                        <outlet property="webView" destination="l8p-AI-i7R" id="dXz-TH-JMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ps-0f-lvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

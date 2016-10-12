@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class PartyRock {
     private var _imageURL: String!
     private var _videoURL: String!
@@ -22,7 +23,8 @@ class PartyRock {
     var videoTitle: String {
         return _videoTitle
     }
-    init (imageURL: String, videoURL:String, videoTitle: String!) {
+    init (imageURL: String, videoURL:String, videoTitle: String) {
+        
         _imageURL = imageURL
         _videoURL = videoURL
         _videoTitle = videoTitle
